@@ -116,7 +116,7 @@ import java.util.ArrayList;
 			if(isSymbol(read.charAt(i))){//in a proper expression, there will always be one instance of this. 
             //but the state before this could hvae only been a white spece or a number, whether the add the contents of 
             //the buffer depend on whether it was emptied by a previous state or not. besure not to just add the entire list, 
-            //some dumb shit might happen.
+            //something wild might happen.
 				switch(state){
 				case ZERO:
 					state = State.START;
